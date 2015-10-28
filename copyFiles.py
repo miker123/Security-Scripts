@@ -17,4 +17,5 @@ for root, dirs, files in os.walk(path):
     if name in files:
         result.append(os.path.join(root, name))
         print name
+        #copies file the name testFile.py. Name can be changed to anything
         shutil.copyfile(name, "testFile.py")
